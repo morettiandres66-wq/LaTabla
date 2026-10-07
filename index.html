@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tablas de quesos gourmet artesanales. Selecciones premium para compartir, regalar y disfrutar.">
+  <title>La Tabla — Quesos Gourmet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="La Tabla inicio">
+      <span class="brand-mark">LT</span>
+      <span>
+        <strong>La Tabla</strong>
+        <small>QUESOS GOURMET</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#tablas">Tablas</a>
+      <a href="#personalizadas">Personalizadas</a>
+      <a href="#historia">Nuestra historia</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <button class="cart-button" id="openCart" aria-label="Abrir carrito">
+      <span>Carrito</span>
+      <b id="cartCount">0</b>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">QUESOS · CHARCUTERÍA · MARIDAJES</p>
+        <h1>Una buena tabla<br><em>cambia la mesa.</em></h1>
+        <p class="hero-text">
+          Seleccionamos quesos, fiambres, frutos secos y dulces para crear tablas
+          gourmet listas para compartir.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-dark" href="#tablas">Ver tablas</a>
+          <a class="text-link" href="#personalizadas">Crear una a medida →</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=1200&q=85" alt="Tabla gourmet con quesos y acompañamientos">
+        <div class="hero-badge">
+          <span>Hechas</span>
+          <strong>a mano</strong>
+          <span>en Rosario</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><strong>48 h</strong><span>de anticipación</span></div>
+      <div><strong>100%</strong><span>selección artesanal</span></div>
+      <div><strong>Rosario</strong><span>entregas coordinadas</span></div>
+      <div><strong>+10</strong><span>años de oficio</span></div>
+    </section>
+
+    <section class="section products-section" id="tablas">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">NUESTRA SELECCIÓN</p>
+          <h2>Tablas para cada ocasión</h2>
+        </div>
+        <p>Elegí una de nuestras combinaciones o pedinos una propuesta personalizada.</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=900&q=85" alt="Tabla clásica de quesos">
+            <span class="product-tag">BEST SELLER</span>
+          </div>
+          <div class="product-info">
+            <div class="product-title-row">
+              <h3>La Clásica</h3>
+              <span class="price">$38.500</span>
+            </div>
+            <p>3 quesos · salame artesanal · frutos secos · aceitunas · dulce de higo · crackers.</p>
+            <div class="product-footer">
+              <span>2–3 personas</span>
+              <button class="add-button" data-name="La Clásica" data-price="38500">Agregar +</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1552767059-ce182ead6c1b?auto=format&fit=crop&w=900&q=85" alt="Tabla premium de quesos y frutas">
+            <span class="product-tag">PREMIUM</span>
+          </div>
+          <div class="product-info">
+            <div class="product-title-row">
+              <h3>La Selección</h3>
+              <span class="price">$56.900</span>
+            </div>
+            <p>5 quesos · jamón crudo · pistachos · peras · miel · chutney · pan de masa madre.</p>
+            <div class="product-footer">
+              <span>4–5 personas</span>
+              <button class="add-button" data-name="La Selección" data-price="56900">Agregar +</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=85" alt="Tabla gourmet con productos frescos">
+            <span class="product-tag">PARA REGALAR</span>
+          </div>
+          <div class="product-info">
+            <div class="product-title-row">
+              <h3>La Boutique</h3>
+              <span class="price">$74.500</span>
+            </div>
+            <p>Selección de autor · 6 quesos · charcutería premium · dulces · frutos secos · panadería.</p>
+            <div class="product-footer">
+              <span>6–8 personas</span>
+              <button class="add-button" data-name="La Boutique" data-price="74500">Agregar +</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="feature-section" id="personalizadas">
+      <div class="feature-image">
+        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1200&q=85" alt="Quesos y acompañamientos gourmet">
+      </div>
+      <div class="feature-copy">
+        <p class="eyebrow">A TU MANERA</p>
+        <h2>¿Tenés una ocasión especial?</h2>
+        <p>
+          Cumpleaños, reuniones, regalos corporativos o simplemente un viernes
+          que merece algo mejor. Armamos una tabla según cantidad de personas,
+          presupuesto y preferencias.
+        </p>
+        <ul class="check-list">
+          <li>Quesos suaves, intensos o de autor</li>
+          <li>Opciones sin carne y vegetarianas</li>
+          <li>Presentaciones para regalo</li>
+          <li>Tarjeta personalizada incluida</li>
+        </ul>
+        <a class="btn btn-outline" href="#contacto">Consultar una tabla</a>
+      </div>
+    </section>
+
+    <section class="story-section" id="historia">
+      <div class="story-copy">
+        <p class="eyebrow">NUESTRA HISTORIA</p>
+        <h2>Empezó con una tabla entre amigos.</h2>
+        <p>
+          La Tabla nació de una obsesión sencilla: encontrar combinaciones que
+          hicieran que una conversación durara un poco más. Empezamos seleccionando
+          quesos para reuniones de amigos y terminamos convirtiendo esa búsqueda
+          en nuestro oficio.
+        </p>
+        <p>
+          Hoy trabajamos con productores pequeños, charcuteros y panaderías
+          que comparten nuestra idea de calidad: menos productos, mejor elegidos.
+        </p>
+        <div class="signature">La Tabla · Rosario</div>
+      </div>
+      <div class="story-stats">
+        <div><strong>+30</strong><span>productores con los que trabajamos</span></div>
+        <div><strong>2016</strong><span>año en que empezó todo</span></div>
+        <div><strong>1</strong><span>regla: que esté realmente rico</span></div>
+      </div>
+    </section>
+
+    <section class="occasion-section">
+      <div class="occasion-card">
+        <span class="occasion-icon">✦</span>
+        <h3>Regalos</h3>
+        <p>Una presentación cuidada para aniversarios, cumpleaños y agradecimientos.</p>
+      </div>
+      <div class="occasion-card featured">
+        <span class="occasion-icon">♢</span>
+        <h3>Eventos</h3>
+        <p>Mesas y tablas para reuniones, celebraciones y encuentros corporativos.</p>
+      </div>
+      <div class="occasion-card">
+        <span class="occasion-icon">♡</span>
+        <h3>Sin carne</h3>
+        <p>Opciones vegetarianas con quesos, vegetales, frutas, semillas y dulces.</p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <div>
+        <p class="eyebrow">HABLEMOS</p>
+        <h2>¿Qué celebración estás imaginando?</h2>
+        <p>Escribinos y te ayudamos a elegir la tabla adecuada.</p>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <input type="text" id="contactName" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu email" required>
+        <textarea placeholder="Contanos qué necesitás" rows="4" required></textarea>
+        <button class="btn btn-dark" type="submit">Enviar consulta</button>
+        <small id="contactMessage"></small>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <a class="brand footer-brand" href="#inicio">
+        <span class="brand-mark">LT</span>
+        <span><strong>La Tabla</strong><small>QUESOS GOURMET</small></span>
+      </a>
+      <p>Quesos, charcutería y buenos momentos.<br>Rosario, Santa Fe.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#tablas">Tablas</a>
+      <a href="#historia">Historia</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#">Instagram</a>
+    </div>
+    <p class="copyright">© 2026 La Tabla. Demo comercial.</p>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay" aria-hidden="true">
+    <aside class="cart-panel" aria-label="Carrito de compra">
+      <div class="cart-header">
+        <h2>Tu carrito</h2>
+        <button id="closeCart" aria-label="Cerrar carrito">×</button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <div class="empty-cart">
+          <span>🧀</span>
+          <p>Tu carrito está vacío.</p>
+          <button class="text-link" id="startShopping">Elegir una tabla →</button>
+        </div>
+      </div>
+      <div class="cart-bottom">
+        <div class="total-row"><span>Total</span><strong id="cartTotal">$0</strong></div>
+        <button class="btn btn-dark checkout-button" id="checkoutButton" disabled>Continuar con la compra</button>
+        <small>El pago y la entrega se coordinan al confirmar el pedido.</small>
+      </div>
+    </aside>
+  </div>
+
+  <div class="checkout-overlay" id="checkoutOverlay" aria-hidden="true">
+    <div class="checkout-modal">
+      <button class="modal-close" id="closeCheckout" aria-label="Cerrar">×</button>
+      <p class="eyebrow">FINALIZAR PEDIDO</p>
+      <h2>Datos de entrega</h2>
+      <form id="checkoutForm">
+        <div class="form-row">
+          <label>Nombre<input id="buyerName" required></label>
+          <label>Teléfono<input id="buyerPhone" type="tel" required></label>
+        </div>
+        <label>Dirección de entrega<input id="buyerAddress" required placeholder="Calle y número, Rosario"></label>
+        <label>Fecha preferida<input id="deliveryDate" type="date" required></label>
+        <label>Notas<textarea id="buyerNotes" rows="3" placeholder="Horario, dedicatoria, preferencias..."></textarea></label>
+        <div class="order-summary" id="orderSummary"></div>
+        <button class="btn btn-dark" type="submit">Confirmar pedido</button>
+      </form>
+      <div class="success-message" id="successMessage" hidden>
+        <span>✓</span>
+        <h3>¡Pedido recibido!</h3>
+        <p>Esta demo simula la recepción del pedido. En una versión real, este paso puede conectarse con Mercado Pago, WhatsApp, email o un sistema de gestión.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
